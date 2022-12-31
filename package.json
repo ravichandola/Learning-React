@@ -1,0 +1,16 @@
+{
+  "name": "learning-react",
+  "version": "1.0.0",
+  "description": "This is a live react class",
+  "main": "index.html",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-personal:ravichandola/Learning-React.git"
+  },
+  "author": "Ravi Chandola",
+  "license": "ISC",
+  "keywords": []
+}
