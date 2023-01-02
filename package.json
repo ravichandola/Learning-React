@@ -2,7 +2,7 @@
   "name": "learning-react",
   "version": "1.0.0",
   "description": "This is a live react class",
-  "main": "index.html",
+  "entry-point": "index.html",
   "scripts": {
     "test": "jest"
   },
@@ -12,5 +12,12 @@
   },
   "author": "Ravi Chandola",
   "license": "ISC",
-  "keywords": []
+  "keywords": [],
+  "dependencies": {},
+  "devDependencies": {
+    "parcel": "^2.8.2",
+    "process": "^0.11.10",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
 }
