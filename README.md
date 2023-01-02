@@ -55,6 +55,8 @@ npm install --save-dev parcel
     "react-dom": "^18.2.0"
   }
 ```
+## Babel
+
 
 ## Contributing
 
