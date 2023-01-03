@@ -57,6 +57,13 @@ npm install --save-dev parcel
 ```
 ## Babel
 
+```bash
+npm install --save-dev @babel/preset-env
+```
+
+We need to run this command in our console and then set the configuration of babel for the same in babelrc file 
+
+[`BABEL DOCS`](https://babeljs.io/docs/en/)
 
 ## Contributing
 
