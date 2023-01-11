@@ -4,6 +4,7 @@ import logo from "./images/icon.png";
 import home from "./images/home.png";
 
 
+
 /* const SearchComponent = () => {
   return (
     <input
@@ -29,7 +30,7 @@ import home from "./images/home.png";
 
 const Title = () =>(
   <h1 id="title" key="h2">
-    Hungry Buds
+    Frontend Cravings
   </h1>
 )
 

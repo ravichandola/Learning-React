@@ -4,7 +4,12 @@
   margin: 10px;
   border: 1px solid black;
 }
-
+#title{
+  font-family: 'Dancing Script', cursive;
+  color: brown;
+  size: 100px;
+  margin: 10px;
+}
 .nav-items > ul{
   list-style-type: none;
   display : flex;
