@@ -16,5 +16,26 @@
 }
 
 .nav-items > ul > li {
-  padding: 10px;
+  padding: 20px;
+
 } 
+.card{
+  width: 200px;
+  border: 1px solid black;
+  padding: 5px;
+  margin: auto;
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: inherit;
+}
+
+.card > img{
+  width: 100%;
+}
+
+.restaurant-list{
+  display: flex;
+  flex-wrap: wrap;
+}
+
