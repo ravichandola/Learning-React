@@ -1,9 +1,16 @@
-import { useState } from "react"; //named export
+import { useState } from "react";
+import { restaurantList } from "../config";
+
+function filterData(searchText, restaurants) {
+  const filterData = restaurants.filter((restaurant) =>
+    restaurant?.data?.name.includes(searchText)
+  );
+  return filterData;
+}
 
 const SearchComponent = () => {
-  // const searchText = "KFC";
-  // searchText is the local state variable
   const [searchText, setSearchText] = useState();
+  const [restaurants, setRestaurants] = useState(restaurantList);
   return (
     <div className="search-container">
       <input
@@ -13,9 +20,18 @@ const SearchComponent = () => {
         value={searchText}
         onChange={(e) => {
           setSearchText(e.target.value);
+          console.log("clicked");
         }}
       />
-      <button className="search-btn">Search</button>
+      <button
+        className="search-btn"
+        onClick={() => {
+          const data = filterData(searchText, restaurants);
+          setRestaurants(data);
+        }}
+      >
+        Search
+      </button>
     </div>
   );
 };
