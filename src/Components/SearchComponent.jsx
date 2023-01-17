@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { restaurantList } from "../config";
 
 function filterData(searchText, restaurants) {
   const filterData = restaurants.filter((restaurant) =>
@@ -8,9 +7,8 @@ function filterData(searchText, restaurants) {
   return filterData;
 }
 
-const SearchComponent = () => {
-  const [searchText, setSearchText] = useState();
-  const [restaurants, setRestaurants] = useState(restaurantList);
+const SearchComponent = ({ list, setList }) => {
+  const [searchText, setSearchText] = useState("");
   return (
     <div className="search-container">
       <input
@@ -26,8 +24,8 @@ const SearchComponent = () => {
       <button
         className="search-btn"
         onClick={() => {
-          const data = filterData(searchText, restaurants);
-          setRestaurants(data);
+          const data = filterData(searchText, list);
+          setList(data);
         }}
       >
         Search
