@@ -7,7 +7,7 @@ function filterData(searchText, restaurants) {
   return filterData;
 }
 
-const SearchComponent = ({ list, setList }) => {
+const SearchComponent = ({ restaurantList, setList }) => {
   const [searchText, setSearchText] = useState("");
   return (
     <div className="search-container">
@@ -24,7 +24,7 @@ const SearchComponent = ({ list, setList }) => {
       <button
         className="search-btn"
         onClick={() => {
-          const data = filterData(searchText, list);
+          const data = filterData(searchText, restaurantList);
           setList(data);
         }}
       >
